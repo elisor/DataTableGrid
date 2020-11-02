@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <table id="tabela" class="table table-bordered table-hover table-striped" width="100%">
+            <thead>
+                <tr>
+                    <th>Conta</th>
+                    <th>Contrato</th>
+                    <th>Cliente</th>
+                    <th>Valor</th>
+                    <th>Taxa</th>
+                    <th>Data Vencimento</th>
+                    <th>Cliente</th>
+                    <th>Valor</th>
+                    <th>Taxa</th>
+                    <th>Data Vencimento</th>
+                    <th>Cliente</th>
+                    <th>Valor</th>
+                    <th>Taxa</th>
+                    <th>Data Vencimento</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < 200; i++)
+                {
+                <tr>
+                    <td>12343434 @i</td>
+                    <td>Contrato @i</td>
+                    <td>Cliente @i</td>
+                    <td>@i  * 100</td>
+                    <td>@i  * 0.10</td>
+                    <td>01/11/202 @i</td>
+                    <td>Teste Cliente Nome Grande</td>
+                    <td>199789454.99</td>
+                    <td>033322354.00</td>
+                    <td>01/11/2020</td>
+                    <td>Teste Cliente Nome Grande</td>
+                    <td>199789454.99</td>
+                    <td>033322354.00</td>
+                    <td>01/11/2020</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
